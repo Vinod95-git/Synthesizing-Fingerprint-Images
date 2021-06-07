@@ -1,4 +1,4 @@
-# Synthesizing Fingerprint Images
+# Synthetic-data-generation-for-fingerprint
 
 This code helps in generating Synthetic data for fingerprints. GAN is used to build the model.  
 
