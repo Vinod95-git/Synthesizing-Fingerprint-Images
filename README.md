@@ -1,8 +1,6 @@
 # Synthesizing Fingerprint Images
 
-The code is an implementation of the paper "[Fingerprint Synthesis: Evaluating Fingerprint Search at Scale](https://ieeexplore.ieee.org/document/8411200), in ICB 2018" by K. Cao and A. K. Jain.
-
-Further work to synthesize a dataset of diverse 100 million fingerprint images can be found in this paper "[Fingerprint Synthesis: Search with 100 Million Prints](https://arxiv.org/abs/1912.07195)" by V. Mistry, J. J. Engelsma and A. K. Jain.
+This code helps in generating Synthetic data for fingerprints. GAN is used to build the model.  
 
 ## Dependencies
 
@@ -14,33 +12,15 @@ Further work to synthesize a dataset of diverse 100 million fingerprint images c
 
 ## Pretrained Model
 
-Please download the model [here](https://drive.google.com/file/d/1deYCP2THgISKvF27idbKvMvH-hpwlgEY/view?usp=sharing). Please extract the zipped file into ``model`` directory in root.
+Please download the model [here](https://drive.google.com/drive/folders/1GzSzu9SXAgjgnnENXzKT41gR6_6uWcSd?usp=sharing). Please extract the zipped file into ``model`` directory in root.
 
-## Usage
+## How to use the model
 
-The bash script 'Generate_Fingerprints.sh' will run the code for synthesizing fingerprint images. Running the bash script can be done simply by:
+You can download the model from above google drive link. Please update the arguments in Improved-WGAN.py file according to the path were dataset is stored and output path where synthetic fingerprint images needs to be stored.
 
-```bash
-bash Generate_Fingerprints.sh
-```
 
-The script has 3 flags for specifying the following:
-* The model to load (--load).
-* The directory to store the generated fingerprint images (--sample_dir).
-* The number of fingerprints to synthesize (--num_images).
 
-You can change the values of these flags in the bash script.
 
-## Citations
 
-Please cite the following paper:
 
-"Fingerprint Synthesis: Evaluating Fingerprint Search at Scale, in ICB 2018" by Kai Cao and Anil K. Jain.
 
-```
-@inproceedings{8411200,
-author={K. {Cao} and A. {Jain}},
-booktitle={2018 International Conference on Biometrics (ICB)},
-title={Fingerprint Synthesis: Evaluating Fingerprint Search at Scale},
-year={2018}}
-```
