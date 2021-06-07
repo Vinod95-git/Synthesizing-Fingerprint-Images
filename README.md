@@ -17,7 +17,7 @@ Please download the model [here](https://drive.google.com/drive/folders/1GzSzu9S
 ## How to use the model
 
 You can download the model from above google drive link. Please update the arguments in Improved-WGAN.py file according to the path were dataset is stored and output path where synthetic fingerprint images needs to be stored.
-
+In the 3rd argument you can specify the total number of synthetic fingerprints you need.
 
 
 
