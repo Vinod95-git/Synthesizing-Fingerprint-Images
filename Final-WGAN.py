@@ -72,9 +72,9 @@ class Model(DCGAN.Model):
 def get_args():
 	parser = argparse.ArgumentParser()
 	parser.add_argument('--gpu', help='comma separated list of GPU(s) to use.')
-	parser.add_argument('--load', help='load model',default='model/I-WGAN_CAE/model-620000.index')
-	parser.add_argument('--sample_dir', help='directory for generated examples',type=str,default='/media/kaicao/Data/Data/FingerprintSynthesis/tensorpack/I-WGAN_CAE_10M_JPEG/')
-	parser.add_argument('--num_images', help='number of fingerprint images ', type=int, default=250)
+	parser.add_argument('--load', help='load model',default='/content/drive/MyDrive/model/model/model-620000.index') 
+	parser.add_argument('--sample_dir', help='directory for generated examples',type=str,default='/content/drive/MyDrive/output images')
+	parser.add_argument('--num_images', help='number of fingerprint images ', type=int, default=100)
 	args = parser.parse_args()
 	opt.use_argument(args)
 	if args.gpu:
