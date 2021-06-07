@@ -5,7 +5,7 @@ This code helps in generating Synthetic data for fingerprints. GAN is used to bu
 ## Dependencies
 
 * Python 3
-* Tensorflow 
+* Tensorflow 1.x
 * Tensorpack 0.5
 * Numpy
 * Scipy
